@@ -4,25 +4,25 @@ A modern, production-ready voice-based shopping list manager with smart AI-power
 
 ## Features
 
-### 1. Voice Input & Commands ✨
+### 1. Voice Input & Commands 
 - **Voice Recognition**: Google Speech-to-Text integration for accurate voice input
 - **Natural Language Processing**: Understands various phrases (e.g., "Add milk", "I need bread", "Remove apples")
 - **Multilingual Support**: English, Spanish, French, German, Hindi
 - **Real-time Feedback**: Live transcript display and listening indicators
 
-### 2. Smart Shopping List Management 📋
+### 2. Smart Shopping List Management 
 - **Add/Remove/Clear items** using voice or text
 - **Automatic Categorization**: Items organized by category (dairy, produce, meat, etc.)
 - **Quantity Management**: Specify quantities and units ("2 bottles of milk", "5 apples")
 - **Price Estimation**: Basic price tracking and total calculation
 
-### 3. Intelligent Recommendations 💡
+### 3. Intelligent Recommendations 
 - **Frequently Bought Together**: Suggests complementary items
 - **Seasonal Recommendations**: Contextual suggestions based on season
 - **Restock Alerts**: Reminds when it's time to rebuy frequently used items
 - **Product Substitutes**: Alternative options for unavailable items
 
-### 4. Modern UI/UX 🎨
+### 4. Modern UI/UX 
 - **Responsive Design**: Works on mobile, tablet, and desktop
 - **Voice-First Interface**: Optimized for voice interactions
 - **Visual Feedback**: Real-time updates and loading states
@@ -281,4 +281,3 @@ For issues, feature requests, or questions: [Create an issue](https://github.com
 
 ---
 
-**Built with ❤️ for smarter shopping**
