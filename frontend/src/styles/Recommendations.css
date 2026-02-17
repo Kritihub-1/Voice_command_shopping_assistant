@@ -1,0 +1,117 @@
+.recommendations {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.recommendations.empty {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.recommendations > h2 {
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 15px;
+}
+
+.recommendations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.recommendation-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.recommendation-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.recommendation-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.rec-icon {
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+.rec-content {
+  flex: 1;
+  text-align: left;
+}
+
+.rec-content h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.rec-reason {
+  margin: 5px 0 0 0;
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.confidence {
+  background: #667eea;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.expand-btn {
+  background: transparent;
+  border: none;
+  color: #667eea;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recommendation-details {
+  padding: 15px;
+  border-top: 1px solid #e0e0e0;
+  background: #fafafa;
+}
+
+.recommendation-details p {
+  margin: 8px 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.add-btn {
+  margin-top: 12px;
+  width: 100%;
+  padding: 10px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+  background: #5568d3;
+  transform: scale(1.02);
+}

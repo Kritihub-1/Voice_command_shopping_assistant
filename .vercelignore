@@ -1,0 +1,41 @@
+# .vercelignore - Files to exclude from Vercel deployment
+
+# Python/Backend
+backend/__pycache__/
+backend/*.pyc
+backend/.pytest_cache/
+
+# Node/Frontend
+frontend/node_modules/
+frontend/.cache/
+
+# Version Control
+.git
+.gitignore
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Documentation
+*.md
+README.md
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary
+*.tmp
+temp/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*

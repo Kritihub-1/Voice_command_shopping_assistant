@@ -1,0 +1,53 @@
+# .gcloudignore file for Google Cloud deployment
+# Files and directories listed here will not be uploaded to Google Cloud
+
+# Version control
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Node/Frontend
+frontend/node_modules/
+frontend/build/
+npm-debug.log*
+yarn-debug.log*
+
+# Environment
+.env
+.env.local
+.env.development
+.env.*.local
+
+# Documentation
+*.md
+todo.txt
+
+# Temporary
+*.tmp
+temp/
+tmp/
+
+# OS
+Thumbs.db
+.DS_Store
