@@ -5,13 +5,21 @@ import os
 def create_app():
     app = Flask(__name__)
     
-    # Production configuration
+    # CORS Configuration
     if os.environ.get('FLASK_ENV') == 'production':
         app.config['ENV'] = 'production'
         app.config['DEBUG'] = False
         app.config['TESTING'] = False
-        # Stricter CORS for production (update to your domain)
-        CORS(app, resources={r"/api/*": {"origins": ["https://yourdomain.com"]}})
+        # Allow Vercel frontend and localhost for production
+        allowed_origins = [
+            "http://localhost:3000",
+            "http://localhost:5000",
+        ]
+        # Add Vercel frontend URL if available
+        vercel_url = os.environ.get('VERCEL_URL')
+        if vercel_url:
+            allowed_origins.append(f"https://{vercel_url}")
+        CORS(app, resources={r"/api/*": {"origins": allowed_origins}})
     else:
         # Development configuration
         app.config['ENV'] = 'development'
