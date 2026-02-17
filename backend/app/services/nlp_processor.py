@@ -1,6 +1,5 @@
 import re
 from typing import Dict, List, Tuple
-from textblob import TextBlob
 
 class NLPProcessor:
     """Natural Language Processing for voice commands"""
