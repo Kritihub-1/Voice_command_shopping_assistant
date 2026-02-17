@@ -10,15 +10,13 @@ def create_app():
         app.config['ENV'] = 'production'
         app.config['DEBUG'] = False
         app.config['TESTING'] = False
-        # Allow Vercel frontend and localhost for production
+        # Allow Vercel frontend and localhost
         allowed_origins = [
             "http://localhost:3000",
             "http://localhost:5000",
+            "https://voice-shopping-assistant.vercel.app",
+            "https://*.vercel.app"
         ]
-        # Add Vercel frontend URL if available
-        vercel_url = os.environ.get('VERCEL_URL')
-        if vercel_url:
-            allowed_origins.append(f"https://{vercel_url}")
         CORS(app, resources={r"/api/*": {"origins": allowed_origins}})
     else:
         # Development configuration
